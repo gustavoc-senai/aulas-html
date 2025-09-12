@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Heróis</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    header {
+      background: red;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    header img {
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    nav {
+      background: black;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: red;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    article {
+      background: white;
+      padding: 15px;
+      margin-top: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    aside {
+      background: #eaeaea;
+      padding: 15px;
+      margin-top: 20px;
+      border-left: 4px solid red
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: red;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <img src="/imagens/marvel.png"
+    
+     alt="Logo Marvel">
+    <h1>Super Heróis</h1>
+  </header>
+
+  <!-- Navegação -->
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#herois">Heróis</a></li>
+      <li><a href="#noticias">Notícias</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main>
+    
+    <section id="sobre">
+      <h2>Sobre a Marvel</h2>
+      <p>A Marvel é uma grande empresa de entretenimento, com origem na Marvel Comics, editora de quadrinhos que se tornou a maior do mundo, fundada em 1939 como Timely Comics.</p>
+      <a href="https://www.marvel.com/">Acesse o site oficial</a>
+    </section>
+
+    <section id="herois">
+      <h2>Nossos Heróis</h2>
+      <p>Os heróis da Marvel incluem personagens icônicos como o Homem-Aranha, Homem de Ferro, Capitão América, Thor e o X-Men.</p>
+      <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; text-align: center;">
+  <div>
+    <img src="/imagens/homem aranha.jpg" alt="Homem-Aranha" style="width: auto;">
+    <p>Homem-Aranha</p>
+  </div>
+  <div>
+    <img src="/imagens/homem de ferro.jpg" alt="Homem de Ferro" style="width: auto;">
+    <p>Homem de Ferro</p>
+  </div>
+  <div>
+    <img src="/imagens/capitao_america.jpg" alt="Capitão América" style="width: auto;">
+    <p>Capitão América</p>
+  </div>
+  <div>
+    <img src="/imagens/thor.jpg" alt="Thor" style="width: auto;">
+    <p>Thor</p>
+  </div>
+  <div>
+    <img src="/imagens/xmen.jpg" alt="X-Men" style="width: auto;">
+    <p>X-Men</p>
+  </div>
+</div>
+
+      <article id="noticias">
+        <h3>Notícias Recentes</h3>
+        <p>As novidades da Marvel incluem as séries animadas <strong>Eyes of Wakanda</strong> (Agosto de 2025), <strong>Marvel Zombies</strong> (Outubro de 2025), a série <strong>Wonder Man</strong> (Dezembro de 2025), e o filme <strong>Quarteto Fantástico</strong> (25 de Julho de 2025).</p>
+      </article>
+
+      <article>
+        <h3>Filmes em 2025</h3>
+        <p>Lançamentos confirmados: <strong>Captain America: Brave New World</strong> (14/02), <strong>Thunderbolts</strong> (02/05), <strong>Quarteto Fantástico: Primeiros Passos</strong> (25/07). Além disso, séries como <em>Ironheart</em> (24/06) e <em>Wonder Man</em> (dezembro) já têm data marcada.</p>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <h3>Desafio de Heróis</h3>
+        <p>Participe do nosso desafio de Heróis e concorra a prêmios. Inscrições abertas na espaçonave.</p>
+      </article>
+    </section>
+
+    <aside>
+      <h4>Dicas do Hulk</h4>
+      <ul>
+        <li>Beba bastante água durante os treinos.</li>
+        <li>Alimente-se bem antes e depois das atividades.</li>
+        <li>Consulte um herói para se tornar um deles.</li>
+      </ul>
+
+      <h4>Horário de Funcionamento</h4>
+      <p>Segunda a Sexta: 6h às 22h<br>
+         Sábado: 8h às 16h<br>
+         Domingo: 10h às 14h</p>
+    </aside>
+  </main>
+
+  <!-- Rodapé -->
+  <footer id="contato">
+    Super Heróis | Todos os direitos reservados &copy; 2025<br> 
+    Siga-nos: 
+    <a href="https://www.marvel.com/">Instagram</a> | 
+    <a href="https://www.marvel.com/">Facebook</a>
+  </footer>
+
+</body>
+</html>

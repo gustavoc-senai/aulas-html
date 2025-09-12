@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Semântica Moderna</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+            color: #f5f5f5;
+        }
+
+        header {
+            background: #1e3c72;
+            padding: 20px;
+            text-align: center;
+            color: #ffdd57;
+            text-shadow: 1px 1px 4px #000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #16222a;
+            padding: 12px;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #f5f5f5;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            padding: 30px;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.5);
+        }
+
+        section h2 {
+            border-bottom: 2px solid #ffdd57;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        article h3 {
+            color: #ff9ff3;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 0 0 8px #000;
+        }
+
+        video, iframe {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 0 0 8px #000;
+        }
+
+        footer {
+            background: #16222a;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🌐 Minha Página Semântica</h1>
+</header>
+
+<nav>
+    <a href="#">Início</a>
+    <a href="#">Artigos</a>
+    <a href="#">Galeria</a>
+    <a href="#">Contato</a>
+</nav>
+
+<main>
+    <section>
+        <h2>📸 Galeria</h2>
+        <article>
+            <h3>Imagem de Exemplo</h3>
+            <p>Uma bela imagem para ilustrar o conteúdo.</p>
+            <img src="/imagens/ceu_estrelado.jpg" alt="Céu estrelado">
+        </article>
+    </section>
+
+    <section>
+        <h2>🎥 Vídeos</h2>
+        <article>
+            <h3>Vídeo Local</h3>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos em HTML5.
+            </video>
+        </article>
+
+        <article>
+            <h3>Vídeo do YouTube</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tbBZF_CLu8Y?si=uSMXkID6bMlAXo33" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+            </iframe>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 - Página Semântica Moderna | Feita por Carvalho</p>
+</footer>
+
+</body>
+</html>
