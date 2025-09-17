@@ -2,166 +2,204 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Página Semântica Moderna</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Currículo Digital - Gustavo Carvalho</title>
     <style>
         body {
-            margin: 0;
             font-family: "Poppins", Arial, sans-serif;
-            background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-            color: #f5f5f5;
+            background: #f5f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px;
         }
 
         header {
-            background: linear-gradient(90deg, #1e3c72, #2a5298);
-            padding: 25px;
             text-align: center;
-            color: #ffdd57;
-            text-shadow: 1px 1px 5px #000;
-            animation: fadeIn 2s ease-in-out;
+            padding: 60px 20px 40px;
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            color: white;
+        }
+
+        header img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            margin-bottom: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.35);
+            transition: transform 0.3s ease;
+        }
+
+        header img:hover {
+            transform: scale(1.05);
+        }
+
+        header h1 {
+            margin: 10px 0;
+            font-size: 2.7em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.15em;
+            opacity: 0.9;
         }
 
         nav {
-            display: flex;
-            justify-content: center;
-            background: #16222a;
-            padding: 14px;
-            gap: 25px;
-            flex-wrap: wrap;
+            background: #2c3e50;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
-            color: #f5f5f5;
+            color: white;
+            margin: 0 18px;
             text-decoration: none;
             font-weight: 600;
-            transition: 0.3s;
-            padding: 6px 12px;
-            border-radius: 6px;
+            font-size: 1em;
+            transition: color 0.3s, border-bottom 0.3s;
         }
 
         nav a:hover {
-            background: #ffdd57;
-            color: #16222a;
-        }
-
-        main {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 30px;
-            padding: 40px;
-            max-width: 1200px;
-            margin: auto;
+            color: #ffd700;
+            border-bottom: 2px solid #ffd700;
         }
 
         section {
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 14px;
-            padding: 22px;
-            box-shadow: 0 0 14px rgba(0,0,0,0.4);
-            transition: transform 0.3s;
+            background: white;
+            margin: 25px 0;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         section:hover {
-            transform: translateY(-5px);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 16px rgba(0,0,0,0.12);
         }
 
         section h2 {
-            border-left: 5px solid #ffdd57;
-            padding-left: 10px;
-            margin-bottom: 20px;
-            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-left: 6px solid #4ca1af;
+            padding-left: 12px;
+            font-size: 1.6em;
         }
 
-        article {
-            margin-bottom: 20px;
+        ul {
+            list-style-type: square;
+            padding-left: 22px;
         }
 
-        article h3 {
-            color: #ff9ff3;
-        }
-
-        img, video, iframe {
-            width: 100%;
-            border-radius: 12px;
-            margin-top: 10px;
-            box-shadow: 0 0 12px #000;
+        ul li {
+            margin-bottom: 8px;
         }
 
         footer {
-            background: #16222a;
-            color: #aaa;
             text-align: center;
-            padding: 25px;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
             margin-top: 30px;
-            font-size: 0.9em;
+            font-size: 0.95em;
+            letter-spacing: 0.5px;
         }
 
-        footer a {
-            color: #ffdd57;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+            nav {
+                font-size: 0.9em;
+            }
+            .container {
+                padding: 15px;
+            }
+            section {
+                padding: 18px;
+            }
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>🌐 Minha Página Semântica</h1>
-</header>
+    <header>
+        <img src="/imagens/foto_perfil.png" alt="Foto de Perfil">
+        <h1>Gustavo Carvalho</h1>
+        <p>Email: gustavo.carvalho@email.com | Tel: (11) 99999-9999</p>
+    </header>
 
-<nav>
-    <a href="#">Início</a>
-    <a href="#">Artigos</a>
-    <a href="#">Galeria</a>
-    <a href="#">Contato</a>
-</nav>
+    <nav>
+        <a href="#objetivo">Objetivo</a>
+        <a href="#formacao">Formação</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#metas">Metas</a>
+    </nav>
 
-<main>
-    <section>
-        <h2>📸 Galeria</h2>
-        <article>
-            <h3>Imagem de Exemplo</h3>
-            <p>Uma bela imagem para ilustrar o conteúdo.</p>
-            <img src="/imagens/ceu_estrelado.jpg" alt="Céu estrelado">
-        </article>
-    </section>
+    <div class="container">
 
-    <section>
-        <h2>🎥 Vídeos</h2>
-        <article>
-            <h3>Vídeo Local</h3>
-            <video controls>
-                <source src="video.mp4" type="video/mp4">
-                Seu navegador não suporta vídeos em HTML5.
-            </video>
-        </article>
+        <section id="objetivo">
+            <h2>🎯 Objetivo Profissional</h2>
+            <p>Atuar na área de tecnologia, desenvolvendo soluções criativas e inovadoras, com foco em evolução contínua e impacto positivo.</p>
+        </section>
 
-        <article>
-            <h3>Vídeo do YouTube</h3>
-            <iframe src="https://www.youtube.com/embed/tbBZF_CLu8Y?si=uSMXkID6bMlAXo33"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-            </iframe>
-        </article>
-    </section>
-</main>
+        <section id="formacao">
+            <h2>🎓 Formação Acadêmica</h2>
+            <ul>
+                <li>Ensino Médio Técnico em Informática - Escola Modelo (2023 - 2025)</li>
+                <li>Graduação em Ciência da Computação - Universidade Exemplo (em andamento)</li>
+            </ul>
+        </section>
 
-<footer>
-    <p>© 2025 - Página Semântica Moderna | Feita por Carvalho</p>
-    <p><a href="mailto:contato@carvalho.dev">✉ contato@carvalho.dev</a></p>
-</footer>
+        <section id="cursos">
+            <h2>📚 Cursos Extras</h2>
+            <ul>
+                <li>Curso de Desenvolvimento Web - Udemy</li>
+                <li>Introdução ao Python - Alura</li>
+                <li>Banco de Dados MySQL - Coursera</li>
+            </ul>
+        </section>
 
+        <section id="experiencia">
+            <h2>💼 Experiência Profissional</h2>
+            <ul>
+                <li>Estagiário de Suporte Técnico - Empresa X (2024 - Atual)</li>
+                <li>Assistente de TI - Colégio Y (2023 - 2024)</li>
+            </ul>
+        </section>
+
+        <section id="habilidades">
+            <h2>🛠️ Habilidades Técnicas</h2>
+            <ul>
+                <li>HTML, CSS e JavaScript</li>
+                <li>Java e Python</li>
+                <li>MySQL e SQL Server</li>
+                <li>Git e GitHub</li>
+                <li>Pacote Office</li>
+            </ul>
+        </section>
+
+        <section id="metas">
+            <h2>🚀 Metas Pessoais</h2>
+            <p>Minha meta é me tornar um desenvolvedor full-stack com foco em inteligência artificial, contribuindo para projetos que transformem a sociedade através da tecnologia.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 - Currículo Digital de Gustavo Carvalho</p>
+    </footer>
 </body>
 </html>
