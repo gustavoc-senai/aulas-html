@@ -4,17 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curiosidades Incríveis</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Poppins", sans-serif;
       margin: 0;
       padding: 0;
       background: #f4f4f9;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background: #0b74da;
+      background: linear-gradient(90deg, #0b74da, #084c9b);
       color: white;
       padding: 20px;
       display: flex;
@@ -25,12 +28,20 @@
     header img {
       width: 60px;
       height: 60px;
-      border-radius: 8px;
+      border-radius: 10px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
     }
 
     nav {
       background: #084c9b;
       padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     nav ul {
@@ -38,33 +49,49 @@
       margin: 0;
       padding: 0;
       display: flex;
-      gap: 15px;
+      gap: 20px;
+      justify-content: center;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
     }
 
     main {
       display: flex;
       gap: 20px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 20px auto;
-      padding: 0 10px;
+      padding: 0 15px;
     }
 
     section {
       flex: 2;
       background: white;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     article {
+      background: #fdfdfd;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       margin-bottom: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    article:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 
     article h2 {
@@ -72,37 +99,87 @@
       color: #0b74da;
     }
 
+    article a {
+      color: #0b74da;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    article a:hover {
+      color: #ff6600;
+    }
+
     aside {
       flex: 1;
-      background: #fff9e6;
-      padding: 15px;
-      border-radius: 8px;
+      background: #fffbe8;
+      padding: 20px;
+      border-radius: 10px;
       border: 1px solid #faea9b;
       height: fit-content;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    aside h2 {
+      color: #b8860b;
+      margin-top: 0;
+    }
+
+    aside a {
+      color: #0b74da;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    aside a:hover {
+      color: #ff6600;
     }
 
     footer {
-      background: #0b74da;
+      background: linear-gradient(90deg, #084c9b, #0b74da);
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 20px;
+      padding: 20px;
+      margin-top: 30px;
     }
 
-    ul li {
-      margin-bottom: 5px;
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: white;
+      text-decoration: underline;
     }
 
     img.responsive {
       max-width: 100%;
       height: auto;
-      border-radius: 6px;
+      border-radius: 8px;
+      margin-top: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    img.responsive:hover {
+      transform: scale(1.03);
+    }
+
+    /* Responsividade */
+    @media (max-width: 900px) {
+      main {
+        flex-direction: column;
+      }
+      aside {
+        order: -1;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="imagens/logo.png" alt="Logo do site">
+    <img src="/imagens/logo.png" alt="Logo do site">
     <h1>Curiosidades Incríveis</h1>
   </header>
 
@@ -140,24 +217,23 @@
         </ul>
       </section>
 
-      <!-- Aqui está a imagem de curiosidade -->
-      <img class="responsive" src="imagens/curiosidade.png" alt="Imagem de Curiosidades">
+      <img class="responsive" src="/imagens/curiosidade.png" alt="Imagem de Curiosidades">
     </section>
 
     <aside>
       <h2>Dicas e Links</h2>
       <ul>
-        <li>Use sempre alt nas imagens para acessibilidade.</li>
-        <li>Explore seções e artigos para organizar melhor o conteúdo.</li>
-        <li><a href="https://www.google.com/aclk?sa=L&ai=DChsSEwiJw_WAjMKPAxXDWUgAHaaQBvgYACICCAEQABoCY2U&ae=2&co=1&ase=2&gclid=CjwKCAjwlOrFBhBaEiwAw4bYDQ-ItId43KmtU3a5PsziKKEjfnZIo49QhqeYd5BJKl0q953URLI7LBoCpSUQAvD_BwE&cce=2&category=acrcp_v1_71&sig=AOD64_0diXpT-hvEq7kc80WUrRIvN8j7Lw&q&nis=4&adurl&ved=2ahUKEwio4-6AjMKPAxWFG7kGHe7bO1EQ0Qx6BAhREAE">Tutorial de HTML</a></li>
-        <li><a href="https://www.google.com/aclk?sa=L&pf=1&ai=DChsSEwj4k46djMKPAxUolu4BHZWuD0AYACICCAEQARoCZHo&co=1&ase=2&gclid=CjwKCAjwlOrFBhBaEiwAw4bYDTdthZ7pdgqZ713BF7KUZvOrBJjGMgu9-ct-3i-Qw3tkCBpbQHdLIBoCHQcQAvD_BwE&cce=2&category=acrcp_v1_32&sig=AOD64_0kbhrEqdvm9iIeR-KAemZrnJFQFw&q&nis=4&adurl=https://www.hostinger.com/tutorials/web-accessibility?utm_campaign%3DGeneric-Tutorials-DSA%7CNT:Se%7CLO:BR-EN%26utm_medium%3Dppc%26gad_source%3D1%26gad_campaignid%3D20990084344%26gbraid%3D0AAAAADMy-hYE2ooOlGlQvU2sLdZljv8PF%26gclid%3DCjwKCAjwlOrFBhBaEiwAw4bYDTdthZ7pdgqZ713BF7KUZvOrBJjGMgu9-ct-3i-Qw3tkCBpbQHdLIBoCHQcQAvD_BwE&ved=2ahUKEwjH0ISdjMKPAxXiILkGHZpsKDEQ0Qx6BAgWEAE">Boas práticas de acessibilidade</a></li>
+        <li> Use sempre alt nas imagens para acessibilidade.</li>
+        <li> Explore seções e artigos para organizar melhor o conteúdo.</li>
+        <li><a href="https://www.google.com/">Tutorial de HTML</a></li>
+        <li><a href="https://www.google.com/"> Boas práticas de acessibilidade</a></li>
       </ul>
     </aside>
   </main>
 
   <footer>
     <p>© 2025 Curiosidades Incríveis. Todos os direitos reservados.</p>
-    <p>Contato: <a href="mailto:contato@curiosidades.com" style="color:white;">contato@curiosidades.com</a></p>
+    <p>Contato: <a href="mailto:contato@curiosidades.com">contato@curiosidades.com</a></p>
   </footer>
 </body>
 </html>
