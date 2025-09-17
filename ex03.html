@@ -3,34 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Poema em HTML</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display&display=swap" rel="stylesheet">
     <style>
         body {
             background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
             color: #f1f1f1;
-            font-family: "Georgia", serif;
+            font-family: "Playfair Display", serif;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
+            line-height: 1.8;
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-size: 3em;
+            font-family: "Dancing Script", cursive;
             color: #ffdd57;
-            text-shadow: 2px 2px 6px #000;
+            text-shadow: 2px 2px 8px #000;
+            animation: fadeIn 2s ease-in-out;
         }
 
         h2 {
             color: #ff9ff3;
-            margin-top: 30px;
+            margin-top: 40px;
+            font-size: 2em;
+            border-bottom: 2px dashed #ff9ff3;
+            display: inline-block;
+            padding-bottom: 5px;
         }
 
         h3 {
             color: #7bed9f;
-            margin-top: 25px;
+            margin-top: 30px;
+            font-size: 1.6em;
         }
 
         p {
             font-size: 1.2em;
-            line-height: 1.8;
+            max-width: 600px;
+            margin: 20px auto;
         }
 
         b {
@@ -42,17 +52,29 @@
         }
 
         img {
-            margin-top: 20px;
+            margin-top: 25px;
             border: 4px solid #fff;
             border-radius: 12px;
-            box-shadow: 0 0 20px #000;
+            box-shadow: 0 0 25px #000;
+            max-width: 90%;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 35px #ffdd57;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1> Poema Digital </h1>
+    <h1>🌙 Poema Digital ✨</h1>
 </header>
 
 <h2><b>Noite Estrelada</b></h2>
@@ -64,7 +86,7 @@
     como se fosse <i>esperança</i>.<br>
 </p>
 
-<h3> Detalhes do Infinito</h3>
+<h3>🌌 Detalhes do Infinito</h3>
 
 <p>
     Um sussurro ecoa na alma,<br>
@@ -77,8 +99,7 @@
     e o universo, poesia.<br>
 </p>
 
-<img src="/imagens/poema.jpg" 
-     alt="Noite Estrelada" width="400">
+<img src="/imagens/poema.jpg" alt="Noite Estrelada" width="400">
 
 </body>
 </html>
