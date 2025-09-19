@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Alunos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+        
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            caption-side: top;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        thead {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        tfoot {
+            font-weight: bold;
+            background-color: #ecf0f1;
+        }
+        
+        .materia-matematica {
+            color: #e74c3c;
+        }
+        
+        .materia-portugues {
+            color: #2980b9;
+        }
+        
+        .materia-historia {
+            color: #27ae60;
+        }
+        
+        .materia-ciencias {
+            color: #f39c12;
+        }
+        
+        .materia-educacao-fisica {
+            color: #9b59b6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dados dos Alunos</h1>
+        
+        <table>
+            <caption>Informações dos Alunos e suas Matérias Favoritas</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Matéria Favorita</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana Silva</td>
+                    <td>15</td>
+                    <td class="materia-matematica">Matemática</td>
+                </tr>
+                <tr>
+                    <td>Bruno Oliveira</td>
+                    <td>16</td>
+                    <td class="materia-portugues">Português</td>
+                </tr>
+                <tr>
+                    <td>Carlos Santos</td>
+                    <td>14</td>
+                    <td class="materia-historia">História</td>
+                </tr>
+                <tr>
+                    <td>Daniela Costa</td>
+                    <td>15</td>
+                    <td class="materia-ciencias">Ciências</td>
+                </tr>
+                <tr>
+                    <td>Eduardo Pereira</td>
+                    <td>16</td>
+                    <td class="materia-educacao-fisica">Educação Física</td>
+                </tr>
+                <tr>
+                    <td>Fernanda Lima</td>
+                    <td>14</td>
+                    <td class="materia-matematica">Matemática</td>
+                </tr>
+                <tr>
+                    <td>Gabriel Alves</td>
+                    <td>15</td>
+                    <td class="materia-ciencias">Ciências</td>
+                </tr>
+                <tr>
+                    <td>Helena Martins</td>
+                    <td>16</td>
+                    <td class="materia-portugues">Português</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total de 8 alunos listados</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
